@@ -1,6 +1,6 @@
 {
   "name": "types-aseprite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "types": "index.d.ts",
   "scripts": {
