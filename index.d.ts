@@ -286,14 +286,15 @@ declare class Image {
 }
 
 declare type ColorConfig =
-  | { r: number; g: number; b: number; a: number }
-  | { h: number; s: number; v: number; a: number }
-  | { red: number; green: number; blue: number; alpha: number }
-  | { hue: number; saturation: number; value: number; alpha: number }
-  | { hue: number; saturation: number; lightness: number; alpha: number }
+  | { r: number; g: number; b: number; a?: number }
+  | { h: number; s: number; v: number; a?: number }
+  | { red: number; green: number; blue: number; alpha?: number }
+  | { hue: number; saturation: number; value: number; alpha?: number }
+  | { hue: number; saturation: number; lightness: number; alpha?: number }
   | { index: number }
   | number;
 
+/** @customConstructor Color */
 declare class Color {
   constructor(colorConfig: ColorConfig);
   alpha: number;
